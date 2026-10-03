@@ -1,0 +1,5 @@
+# build artefacts that can be regenerated with tools/extract_assets.py + tools/build_svgs.py
+tools/frames/
+tools/assets.json
+tools/preview/
+__pycache__/

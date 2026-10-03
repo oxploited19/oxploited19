@@ -1,0 +1,5 @@
+# keep every text asset LF so the generated SVGs match their templates byte for byte
+* text=auto eol=lf
+*.woff2 binary
+*.jpg binary
+*.png binary
