@@ -22,10 +22,6 @@
 
 <img src="./id-dashboard.svg?v=3" alt="Animated cybersecurity profile dashboard for Omar Mahmood" width="100%"/>
 
-<br/><br/>
-
-<img src="./profile-3d-contrib/profile-night-view.svg" alt="Three-dimensional view of GitHub contribution activity" width="100%"/>
-
 </div>
 
 ## Profile
