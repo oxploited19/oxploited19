@@ -41,7 +41,7 @@ SOC and Red Team Lead based in Lahore, Pakistan. I work across detection enginee
 
 ### Current roles
 
-- **Secure Quanta** — SOC and Red Team Lead, remote · May 2024–Present
+- **SecureQuanta** — SOC and Red Team Lead, remote · May 2024–Present
 
 ### Previous roles
 - **Cyberwing** — Cyber Security Specialist and Analyst · Jan 2023–Apr 2024
@@ -82,6 +82,6 @@ SOC and Red Team Lead based in Lahore, Pakistan. I work across detection enginee
 
 <img src="./connect.svg?v=3" alt="Animated contact card for email, LinkedIn, GitHub, and TryHackMe" width="100%"/>
 
-**Adversary minded. Defender focused.**
+**Adversary minded ✌︎㋡. Defender focused ⚔︎⛊.**
 
 </div>
