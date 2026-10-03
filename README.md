@@ -58,9 +58,9 @@ SOC and Red Team Lead based in Lahore, Pakistan. I work across detection enginee
 
 ## Certifications and training
 
-**Cyberwarfare Labs:** CRTA · CRT-ID · CRT-COI · MCBTA  
-**ISC2:** Certified in Cybersecurity (CC)  
-**Microsoft:** SC-900 · AZ-900 · SC-200 · MS-900  
+**🎖️Cyberwarfare Labs:** CRTA · CRT-ID · CRT-COI · MCBTA  
+**🎖️ISC2:** Certified in Cybersecurity (CC)  
+**🎖️Microsoft:** SC-900 · AZ-900 · SC-200 · MS-900  
 **Course certificates:** Google Foundations of Cybersecurity · Play It Safe: Manage Security Risks · Connect and Protect: Networks and Network Security · CrowdSec Community-Driven Cybersecurity  
 **Additional training:** NAVTAC Cybersecurity and Digital Forensics · Cyberwing Cybersecurity and SOC Operations · CCNA training · CCNP training
 
