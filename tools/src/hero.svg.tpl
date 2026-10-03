@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 540" width="1280" height="540" role="img" aria-label="Omar Mahmood - SOC and Red Team Lead"><title>Omar Mahmood - SOC &amp; Red Team Lead</title><desc>Animated hero: Omar walks in and waves, next to his name, cycling security roles and details.</desc><defs><style>@font-face{font-family:'SG';src:url(data:font/woff2;base64,__FONT_SG__) format('woff2')}@font-face{font-family:'SGM';src:url(data:font/woff2;base64,__FONT_SGM__) format('woff2')}@font-face{font-family:'JBM';src:url(data:font/woff2;base64,__FONT_JBM__) format('woff2')}@font-face{font-family:'JBMB';src:url(data:font/woff2;base64,__FONT_JBMB__) format('woff2')}
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 540" width="1280" height="540" role="img" aria-label="Omar Mahmood - SOC and Red Team Lead, Blue Team Lead"><title>Omar Mahmood - SOC &amp; Red Team Lead</title><desc>Animated hero: Omar walks in and waves, next to his name, cycling security roles and details.</desc><defs><style>@font-face{font-family:'SG';src:url(data:font/woff2;base64,__FONT_SG__) format('woff2')}@font-face{font-family:'SGM';src:url(data:font/woff2;base64,__FONT_SGM__) format('woff2')}@font-face{font-family:'JBM';src:url(data:font/woff2;base64,__FONT_JBM__) format('woff2')}@font-face{font-family:'JBMB';src:url(data:font/woff2;base64,__FONT_JBMB__) format('woff2')}
 text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
 .sg{font-family:'SG','Segoe UI',Helvetica,Arial,sans-serif;font-weight:700}
 .sgm{font-family:'SGM','Segoe UI',Helvetica,Arial,sans-serif;font-weight:500}
@@ -24,11 +24,11 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
 @keyframes scan{0%{transform:translateY(-40px);opacity:0}12%{opacity:.9}88%{opacity:.9}100%{transform:translateY(400px);opacity:0}}
 </style>
 <linearGradient id="nameG" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-  <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+  <stop offset="0" stop-color="#38bdf8"/><stop offset=".5" stop-color="#7c3aed"/><stop offset="1" stop-color="#ef4444"/>
   <animateTransform attributeName="gradientTransform" type="translate" values="-.35 0;.35 0;-.35 0" dur="7s" repeatCount="indefinite"/>
 </linearGradient>
 <linearGradient id="nameG2" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="#22d3ee"/><stop offset=".55" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+  <stop offset="0" stop-color="#38bdf8"/><stop offset=".55" stop-color="#7c3aed"/><stop offset="1" stop-color="#ef4444"/>
 </linearGradient>
 <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
   <stop offset="0" stop-color="#000"/><stop offset=".1" stop-color="#fff"/><stop offset="1" stop-color="#fff"/>
@@ -43,7 +43,7 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
   <rect x="560" y="0" width="724" height="540" fill="url(#fadeB)"/>
 </mask>
 <linearGradient id="scanG" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset=".5" stop-color="#22d3ee" stop-opacity=".22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+  <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/><stop offset=".5" stop-color="#38bdf8" stop-opacity=".22"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
 </linearGradient>
 <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="13" cy="13" r=".9" fill="#ffffff" fill-opacity=".06"/></pattern>
 <filter id="blur60" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
@@ -56,9 +56,9 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
   <rect width="1280" height="540" fill="#0d0e16"/>
   <rect width="1280" height="540" fill="url(#dots)"/>
   <g filter="url(#blur60)" opacity=".55">
-    <circle class="blob" cx="170" cy="120" r="150" fill="#22d3ee" fill-opacity=".22"/>
-    <circle class="blob2" cx="470" cy="470" r="170" fill="#a78bfa" fill-opacity=".22"/>
-    <circle class="blob" cx="1150" cy="80" r="130" fill="#f472b6" fill-opacity=".14"/>
+    <circle class="blob" cx="170" cy="120" r="150" fill="#2563eb" fill-opacity=".22"/>
+    <circle class="blob2" cx="470" cy="470" r="170" fill="#7c3aed" fill-opacity=".22"/>
+    <circle class="blob" cx="1150" cy="80" r="130" fill="#ef4444" fill-opacity=".14"/>
   </g>
 
   <!-- VIDEO - every frame of the clip, switched with SMIL -->
@@ -92,23 +92,23 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
 
   <!-- LEFT COPY -->
   <g class="fu" style="animation-delay:.2s">
-    <rect x="64" y="64" width="252" height="32" rx="16" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".45"/>
-    <circle cx="84" cy="80" r="4.5" fill="#34d399"/>
-    <circle cx="84" cy="80" r="4" fill="none" stroke="#34d399" stroke-width="1.5"><animate attributeName="r" values="4;11" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.6s" repeatCount="indefinite"/></circle>
-    <text class="jbb" x="98" y="85" font-size="12" fill="#34d399" letter-spacing="1.6">OPEN TO COLLABS</text>
+    <rect x="64" y="64" width="300" height="32" rx="16" fill="#38bdf8" fill-opacity=".1" stroke="#38bdf8" stroke-opacity=".45"/>
+    <circle cx="84" cy="80" r="4.5" fill="#38bdf8"/>
+    <circle cx="84" cy="80" r="4" fill="none" stroke="#38bdf8" stroke-width="1.5"><animate attributeName="r" values="4;11" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="1.6s" repeatCount="indefinite"/></circle>
+    <text class="jbb" x="98" y="85" font-size="12" fill="#38bdf8" letter-spacing="1.6">RED TEAM &#215; BLUE TEAM LEAD</text>
   </g>
   <text clip-path="url(#hiClip)" class="sgm" x="64" y="164" font-size="30" fill="#eceef6">Hi there, I'm</text>
   <g clip-path="url(#nameClip)">
     <text class="sg" x="60" y="250" font-size="76" letter-spacing="-1.5" fill="url(#nameG)" filter="url(#glow)">Omar Mahmood</text>
   </g>
   <rect x="64" y="272" width="120" height="3" rx="1.5" fill="url(#nameG2)"><animate attributeName="width" values="0;0;120" keyTimes="0;.68;1" dur="2.5s" begin="0s" fill="freeze"/></rect>
-  <text class="jbb fi" x="64" y="340" font-size="21" fill="#22d3ee" style="animation-delay:1.8s">&gt;</text>
-  <text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="1" style="animation-delay:1.9s">SOC &amp; Red Team Lead</text><text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="0" style="animation-delay:4.9s">Threat Detection Engineer</text><text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="0" style="animation-delay:7.9s">Incident Response &amp; Hunting</text><text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="0" style="animation-delay:10.9s">VAPT / Purple Team Operator</text>
-  <text class="sgm fu" x="64" y="392" font-size="18" fill="#8d93ab" style="animation-delay:2.5s">I hunt threats, run the playbook and automate</text>
-  <text class="sgm fu" x="64" y="418" font-size="18" fill="#8d93ab" style="animation-delay:2.62s">the boring 80% of a SOC with agents and SOAR.</text>
-  <g class="fu" style="animation-delay:3.0s"><g transform="translate(72,453)"><path d="M0-8a6 6 0 0 1 6 6c0 4.5-6 10-6 10s-6-5.5-6-10a6 6 0 0 1 6-6z" fill="none" stroke="#22d3ee" stroke-width="1.8"/><circle cy="-2" r="2" fill="#22d3ee"/></g><text class="jb" x="88" y="458" font-size="14.5" fill="#8d93ab">Lahore, PK</text></g>
+  <text class="jbb fi" x="64" y="340" font-size="21" fill="#38bdf8" style="animation-delay:1.8s">&gt;</text>
+  <text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="1" style="animation-delay:1.9s">SOC &amp; Red Team Lead</text><text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="0" style="animation-delay:4.9s">Blue Team &amp; Detection Lead</text><text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="0" style="animation-delay:7.9s">VAPT &amp; Attack Simulation</text><text class="role jb" x="92" y="340" font-size="21" fill="#eceef6" opacity="0" style="animation-delay:10.9s">Purple Team &amp; AI Automation</text>
+  <text class="sgm fu" x="64" y="392" font-size="18" fill="#8d93ab" style="animation-delay:2.5s">Leading SOC, SIEM and XDR operations with custom</text>
+  <text class="sgm fu" x="64" y="418" font-size="18" fill="#8d93ab" style="animation-delay:2.62s">AI-assisted VAPT, hunting and incident response.</text>
+  <g class="fu" style="animation-delay:3.0s"><g transform="translate(72,453)"><path d="M0-8a6 6 0 0 1 6 6c0 4.5-6 10-6 10s-6-5.5-6-10a6 6 0 0 1 6-6z" fill="none" stroke="#22d3ee" stroke-width="1.8"/><circle cy="-2" r="2" fill="#22d3ee"/></g><text class="jb" x="88" y="458" font-size="14.5" fill="#8d93ab">Lahore, Pakistan</text></g>
   <g class="fu" style="animation-delay:3.15s"><g transform="translate(232,453)"><rect x="-7" y="-5" width="14" height="11" rx="2" fill="none" stroke="#a78bfa" stroke-width="1.8"/><path d="M-3-5v-2.5h6V-5" fill="none" stroke="#a78bfa" stroke-width="1.8"/></g><text class="jb" x="248" y="458" font-size="14.5" fill="#8d93ab">Secure Quanta</text></g>
-  <g class="fu" style="animation-delay:3.3s"><g transform="translate(392,453)"><path d="M0-8l2.4 5 5.4.6-4 3.7 1.1 5.4L0 4-4.9 6.7-3.8 1.3-7.8-2.4l5.4-.6z" fill="none" stroke="#f472b6" stroke-width="1.7" stroke-linejoin="round"/></g><text class="jb" x="408" y="458" font-size="14.5" fill="#8d93ab">10+ CERTIFICATIONS</text></g>
+  <g class="fu" style="animation-delay:3.3s"><g transform="translate(392,453)"><path d="M0-8l2.4 5 5.4.6-4 3.7 1.1 5.4L0 4-4.9 6.7-3.8 1.3-7.8-2.4l5.4-.6z" fill="none" stroke="#ef4444" stroke-width="1.7" stroke-linejoin="round"/></g><text class="jb" x="408" y="458" font-size="14.5" fill="#8d93ab">11 CERTS + COURSES</text></g>
 </g>
 <rect x=".75" y=".75" width="1278.5" height="538.5" rx="25.5" fill="none" stroke="#262a42" stroke-width="1.5"/>
 </svg>

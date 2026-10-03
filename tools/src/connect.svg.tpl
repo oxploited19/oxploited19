@@ -18,8 +18,8 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
 .dotp{animation:dotPulse 2.4s ease-in-out infinite}
 </style>
 <linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171a2c"/><stop offset="1" stop-color="#121423"/></linearGradient>
-<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee" stop-opacity=".5"/><stop offset=".5" stop-color="#262a42"/><stop offset="1" stop-color="#f472b6" stop-opacity=".5"/></linearGradient>
-<radialGradient id="charGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#a78bfa" stop-opacity=".45"/><stop offset=".6" stop-color="#22d3ee" stop-opacity=".12"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8" stop-opacity=".55"/><stop offset=".5" stop-color="#262a42"/><stop offset="1" stop-color="#ef4444" stop-opacity=".55"/></linearGradient>
+<radialGradient id="charGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#7c3aed" stop-opacity=".45"/><stop offset=".6" stop-color="#38bdf8" stop-opacity=".12"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
 <pattern id="dots5" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r=".8" fill="#fff" fill-opacity=".05"/></pattern>
 </defs>
 <rect width="1280" height="480" rx="24" fill="url(#cardbg)"/>
@@ -33,12 +33,12 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
 <g class="fi" style="animation-delay:.3s">
   <text class="jbb" x="34" y="452" font-size="10" fill="#8d93ab" letter-spacing="1.6">OPEN TO</text>
   <circle class="dotp" cx="98" cy="448" r="3" fill="#34d399"/>
-  <text class="jbb" x="110" y="452" font-size="10" fill="#34d399" letter-spacing="1.6">SOC L3 &#183; RED TEAM &#183; VAPT</text>
+  <text class="jbb" x="110" y="452" font-size="10" fill="#34d399" letter-spacing="1.6">SOC &#183; RED TEAM &#183; VAPT</text>
 </g>
 
 <g class="fu" style="animation-delay:.15s">
-  <text class="jbb" x="430" y="72" font-size="12.5" fill="#f472b6" letter-spacing="2.2">// CONNECT</text>
-  <text class="sg" x="430" y="106" font-size="26" fill="#eceef6" letter-spacing="-.4">Let&#8217;s talk security</text>
+  <text class="jbb" x="430" y="72" font-size="12.5" fill="#38bdf8" letter-spacing="2.2">// RED TEAM &#215; BLUE TEAM</text>
+  <text class="sg" x="430" y="106" font-size="26" fill="#eceef6" letter-spacing="-.4">Connect with the operator</text>
   <rect x="430" y="118" width="810" height="1" fill="#262a42"/>
 </g>
 
@@ -87,14 +87,14 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
 </g>
 
 <g class="fu" style="animation-delay:.76s">
-  <g><rect x="430" y="384" width="71" height="28" rx="14" fill="#22d3ee" fill-opacity=".1" stroke="#22d3ee" stroke-opacity=".35"/>
-    <text class="jbb" x="465.5" y="402" font-size="10" fill="#22d3ee" text-anchor="middle" letter-spacing="1.2">SOC L3</text></g>
-  <g><rect x="513" y="384" width="93" height="28" rx="14" fill="#f472b6" fill-opacity=".1" stroke="#f472b6" stroke-opacity=".35"/>
-    <text class="jbb" x="559.5" y="402" font-size="10" fill="#f472b6" text-anchor="middle" letter-spacing="1.2">RED TEAM</text></g>
-  <g><rect x="618" y="384" width="57" height="28" rx="14" fill="#fbbf24" fill-opacity=".1" stroke="#fbbf24" stroke-opacity=".35"/>
-    <text class="jbb" x="646.5" y="402" font-size="10" fill="#fbbf24" text-anchor="middle" letter-spacing="1.2">VAPT</text></g>
-  <g><rect x="687" y="384" width="93" height="28" rx="14" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".35"/>
-    <text class="jbb" x="733.5" y="402" font-size="10" fill="#34d399" text-anchor="middle" letter-spacing="1.2">FREELANCE</text></g>
+  <g><rect x="430" y="384" width="71" height="28" rx="14" fill="#38bdf8" fill-opacity=".1" stroke="#38bdf8" stroke-opacity=".35"/>
+    <text class="jbb" x="465.5" y="402" font-size="10" fill="#38bdf8" text-anchor="middle" letter-spacing="1.2">BLUE TEAM</text></g>
+  <g><rect x="513" y="384" width="93" height="28" rx="14" fill="#ef4444" fill-opacity=".1" stroke="#ef4444" stroke-opacity=".35"/>
+    <text class="jbb" x="559.5" y="402" font-size="10" fill="#ef4444" text-anchor="middle" letter-spacing="1.2">RED TEAM</text></g>
+  <g><rect x="618" y="384" width="57" height="28" rx="14" fill="#f97316" fill-opacity=".1" stroke="#f97316" stroke-opacity=".35"/>
+    <text class="jbb" x="646.5" y="402" font-size="10" fill="#f97316" text-anchor="middle" letter-spacing="1.2">VAPT</text></g>
+  <g><rect x="687" y="384" width="93" height="28" rx="14" fill="#7c3aed" fill-opacity=".1" stroke="#7c3aed" stroke-opacity=".35"/>
+    <text class="jbb" x="733.5" y="402" font-size="10" fill="#7c3aed" text-anchor="middle" letter-spacing="1.2">PURPLE TEAM</text></g>
   <text class="jbb" x="1240" y="403" font-size="9.5" fill="#8d93ab" text-anchor="end" letter-spacing="1.4">TYPICAL REPLY &lt; 24H</text>
 </g>
 </svg>

@@ -3,7 +3,7 @@
 Fonts, brand icons, video frames and photos are inlined as base64, so the SVGs
 render identically on GitHub with no network access and no JavaScript.
 """
-import base64, json, math, pathlib, re, sys
+import base64, html, json, math, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TOOLS = ROOT / "tools"
@@ -24,13 +24,43 @@ CUSTOM_GLYPHS = {
     "nessus": ('<g fill="none" stroke="currentColor" stroke-width="1.8">'
                '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/></g>'
                '<circle cx="12" cy="12" r="1.7" fill="currentColor"/>'),
+    "openvas": ('<g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">'
+                '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v3M20.5 12h-3M12 20.5v-3M3.5 12h3"/></g>'
+                '<circle cx="12" cy="12" r="2.5" fill="currentColor"/>'),
+    "nexpose": ('<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">'
+                '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></g>'),
     "bash": ('<g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
              'stroke-linejoin="round"><rect x="2.4" y="4" width="19.2" height="16" rx="3"/>'
              '<path d="M12 7.4v9.2"/><path d="M9.4 9.6h3.4a1.7 1.7 0 0 1 0 3.4H9.4a1.7 1.7 0 0 0 0 3.4h3.8"/>'
              '</g>'),
     "moloCH": ('<g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">'
-               '<path d="M2.2 12S6 5.6 12 5.6 21.8 12 21.8 12 18 18.4 12 18.4 2.2 12 2.2 12z"/></g>'
-               '<circle cx="12" cy="12" r="3" fill="currentColor"/>'),
+                '<path d="M2.2 12S6 5.6 12 5.6 21.8 12 21.8 12 18 18.4 12 18.4 2.2 12 2.2 12z"/></g>'
+                '<circle cx="12" cy="12" r="3" fill="currentColor"/>'),
+    "wazuh": ('<path d="M12 2.5 21 6v6c0 5-3.6 8.3-9 10.5C6.6 20.3 3 17 3 12V6z" '
+              'fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'
+              '<path d="m7.5 12 3 3 6-6" fill="none" stroke="currentColor" stroke-width="2" '
+              'stroke-linecap="round" stroke-linejoin="round"/>'),
+    "qradar": ('<circle cx="10.5" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/>'
+               '<path d="M10.5 4a8 8 0 0 1 8 8h-8zM10.5 12l6 5" fill="currentColor"/>'),
+    "sentinelone": ('<path d="M12 2.5 21 6v6c0 5-3.6 8.3-9 10.5C6.6 20.3 3 17 3 12V6z" '
+                    'fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'
+                    '<circle cx="12" cy="11" r="2.4" fill="currentColor"/>'
+                    '<path d="M12 14v3" stroke="currentColor" stroke-width="2"/>'),
+    "xcitium": ('<path d="M12 2.5 21 6v6c0 5-3.6 8.3-9 10.5C6.6 20.3 3 17 3 12V6z" '
+                'fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'
+                '<path d="M12 7v9M7.5 11.5h9" stroke="currentColor" stroke-width="2" '
+                'stroke-linecap="round"/>'),
+    "azure": ('<path d="M7 18.5h10a4.5 4.5 0 0 0 .5-9A6 6 0 0 0 6 8.5a5 5 0 0 0 1 10z" '
+              'fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'),
+    "agenticai": ('<g fill="none" stroke="currentColor" stroke-width="1.8">'
+                  '<circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/>'
+                  '<circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/>'
+                  '<circle cx="19" cy="18" r="2"/></g>'
+                  '<path d="m7 7.5 3 2.5m7-2.5-3 2.5m-7 7 3-2.5m7 2.5-3-2.5" '
+                  'fill="none" stroke="currentColor" stroke-width="1.8"/>'),
+    "mitreattack": ('<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/>'
+                    '<circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/>'
+                    '<circle cx="12" cy="12" r="1.5" fill="currentColor"/>'),
 }
 
 # colour overrides so near-black brand colours stay visible on the dark card
@@ -39,43 +69,46 @@ COLOR_OVERRIDE = {"splunk": "65A637", "elastic": "00BFB3", "amazonwebservices": 
 
 # chip labels differ from their slug where the brand name is longer
 CHIP_NAMES = {"amazonwebservices": "AWS", "githubactions": "GitHub Actions",
-              "virustotal": "VirusTotal", "burpsuite": "Burp Suite",
-              "moloCH": "MOLOCH", "openvpn": "OpenVPN", "pfsense": "pfSense"}
+              "virustotal": "VirusTotal", "openvas": "OpenVAS", "nexpose": "Nexpose",
+              "moloCH": "MOLOCH", "openvpn": "OpenVPN", "pfsense": "pfSense",
+              "sentinelone": "SentinelOne", "xcitium": "Xcitium XDR",
+              "agenticai": "Agentic AI", "mitreattack": "MITRE ATT&CK",
+              "azure": "Azure", "qradar": "QRadar", "wazuh": "Wazuh"}
 
 # ------------------------------------------------------------- stack content
 ORBITS = [
-    dict(path="orb0", dur=26, ring="#22d3ee", speed=1.0, items=[
-        dict(slug="splunk", color="#65A637", frac=0.0, hub=True,
-             moons=[("wireshark", "#1679A7", 0.0), ("elastic", "#00BFB3", -3.5)]),
-        dict(slug="virustotal", color="#394EFF", frac=1 / 3),
-        dict(slug="graylog", color="#FF5A52", frac=2 / 3),
+    dict(path="orb0", dur=26, ring="#38bdf8", speed=1.0, items=[
+        dict(slug="splunk", color="#38bdf8", frac=0.0, hub=True,
+             moons=[("wazuh", "#60a5fa", 0.0), ("qradar", "#2563eb", -3.5)]),
+        dict(slug="sentinelone", color="#38bdf8", frac=1 / 3),
+        dict(slug="xcitium", color="#60a5fa", frac=2 / 3),
     ]),
-    dict(path="orb1", dur=19, ring="#f472b6", speed=-1.0, items=[
-        dict(slug="burpsuite", color="#FF6633", frac=0.0),
-        dict(slug="metasploit", color="#2596CD", frac=1 / 3),
-        dict(slug="qualys", color="#ED2E26", frac=2 / 3),
+    dict(path="orb1", dur=19, ring="#ef4444", speed=-1.0, items=[
+        dict(slug="nuclei", color="#ef4444", frac=0.0),
+        dict(slug="nessus", color="#f97316", frac=1 / 3),
+        dict(slug="qualys", color="#dc2626", frac=2 / 3),
     ]),
     dict(path="orb2", dur=33, ring="#a78bfa", speed=1.0, items=[
-        dict(slug="amazonwebservices", color="#FF9900", frac=0.0),
-        dict(slug="linux", color="#FCC624", frac=0.25),
-        dict(slug="docker", color="#2496ED", frac=0.5),
-        dict(slug="openvpn", color="#EA7E20", frac=0.75),
+        dict(slug="amazonwebservices", color="#f59e0b", frac=0.0),
+        dict(slug="azure", color="#60a5fa", frac=0.25),
+        dict(slug="pfsense", color="#38bdf8", frac=0.5),
+        dict(slug="openvpn", color="#2563eb", frac=0.75),
     ]),
 ]
 
 CHIP_GROUPS = [
-    ("DETECTION & SIEM", "#22d3ee", [("splunk", "#65A637"), ("elastic", "#00BFB3"),
-                                     ("wireshark", "#1679A7"), ("suricata", "#FF6B6B"),
-                                     ("snort", "#F6A7AA")]),
-    ("RED TEAM & VAPT", "#f472b6", [("burpsuite", "#FF6633"), ("metasploit", "#2596CD"),
-                                    ("nuclei", "#FF4D4D"), ("nessus", "#FFB020"),
-                                    ("qualys", "#ED2E26")]),
-    ("CLOUD & NETWORK", "#fbbf24", [("amazonwebservices", "#FF9900"), ("pfsense", "#2F6FEB"),
-                                    ("openvpn", "#EA7E20"), ("cisco", "#1BA0D7"),
-                                    ("docker", "#2496ED")]),
-    ("CUSTOM TOOLING", "#34d399", [("python", "#3776AB"), ("bash", "#5FA85F"),
-                                   ("powershell", "#4C9BE8"), ("moloCH", "#8B5CF6"),
-                                   ("githubactions", "#2088FF")]),
+    ("BLUE TEAM // DEFENSE", "#38bdf8", [("splunk", "#38bdf8"), ("wazuh", "#60a5fa"),
+                                           ("qradar", "#2563eb"), ("sentinelone", "#38bdf8"),
+                                           ("xcitium", "#60a5fa")]),
+    ("RED TEAM // OFFENSE", "#ef4444", [("nuclei", "#fb7185"), ("nessus", "#f97316"),
+                                          ("qualys", "#dc2626"), ("openvas", "#ef4444"),
+                                          ("nexpose", "#f87171")]),
+    ("PURPLE TEAM // AUTOMATION", "#a78bfa", [("python", "#c084fc"), ("bash", "#a78bfa"),
+                                                 ("powershell", "#60a5fa"), ("agenticai", "#a78bfa"),
+                                                 ("mitreattack", "#8b5cf6")]),
+    ("CLOUD // NETWORK", "#f59e0b", [("amazonwebservices", "#f59e0b"), ("azure", "#60a5fa"),
+                                        ("pfsense", "#38bdf8"), ("openvpn", "#2563eb"),
+                                        ("cisco", "#0ea5e9")]),
 ]
 
 # elliptical orbit geometry: (rx, ry, rotation deg, start point, sweep direction)
@@ -203,7 +236,7 @@ def chip_groups():
                 f'<animate attributeName="stroke-opacity" values=".3;1;.3;.3" keyTimes="0;.04;.14;1" '
                 f'dur="7.20s" begin="{2.5 + 0.45 * n:.2f}s" repeatCount="indefinite"/></rect>'
                 f'<g transform="translate({x + 22:.1f},{y + 40})">{icon_markup(slug, color, 0.8333)}</g>'
-                f'<text class="jb" x="{x + 41:.1f}" y="{y + 44.5}" font-size="13" fill="#eceef6">{name}</text></g>')
+                f'<text class="jb" x="{x + 41:.1f}" y="{y + 44.5}" font-size="13" fill="#eceef6">{html.escape(name)}</text></g>')
             x += w + 9
             n += 1
     return "".join(out)
