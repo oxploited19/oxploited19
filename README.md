@@ -42,10 +42,9 @@ SOC and Red Team Lead based in Lahore, Pakistan. I work across detection enginee
 ### Current roles
 
 - **Secure Quanta** — SOC and Red Team Lead, remote · May 2024–Present
-- **Cyberwing** — Cyber Security Specialist and Analyst · Jan 2023–Present
 
 ### Previous roles
-
+- **Cyberwing** — Cyber Security Specialist and Analyst · Jan 2023–Apr 2024
 - **Binary Cubers** — Security Specialist, remote contract · Sep 2023–Mar 2024
 - **Prodigy Infotech** — Cyber Security Remote Intern · Mar–Apr 2024
 - **Corvit Networks LLC** — Junior Cyber Security Analyst Intern · Mar–Sep 2023
