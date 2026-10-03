@@ -50,7 +50,7 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
     <rect x="128" y="410" width="124" height="18" rx="9" fill="none" stroke="#38bdf8" stroke-opacity=".45"/>
     <circle cx="142" cy="419" r="3.2" fill="#34d399">
       <animate attributeName="opacity" values="1;.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
-    <text class="jbb" x="152" y="423" font-size="9.5" fill="#34d399" letter-spacing="1">VERIFIED</text>
+    <text class="jbb" x="152" y="423" font-size="9.5" fill="#34d399" letter-spacing="1">PROFILE</text>
   </g>
 </g>
 
@@ -80,7 +80,7 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
     <text class="sg" x="396" y="242" font-size="28" fill="#38bdf8">2023+</text>
     <text class="jbb" x="396" y="266" font-size="9.5" fill="#8d93ab" letter-spacing="1.3">SECURITY WORK SINCE</text></g>
   <g><rect x="600" y="204" width="200" height="82" rx="12" fill="#ef4444" fill-opacity=".08" stroke="#ef4444" stroke-opacity=".3"/>
-    <text class="sg" x="616" y="242" font-size="28" fill="#ef4444">11</text>
+    <text class="sg" x="616" y="242" font-size="28" fill="#ef4444">13</text>
     <text class="jbb" x="616" y="266" font-size="9.5" fill="#8d93ab" letter-spacing="1.3">CERTS + COURSES</text></g>
   <g><rect x="820" y="204" width="200" height="82" rx="12" fill="#2563eb" fill-opacity=".08" stroke="#2563eb" stroke-opacity=".3"/>
     <text class="sg" x="836" y="242" font-size="28" fill="#2563eb">5</text>

@@ -1,22 +1,45 @@
-# Omar Mahmood
+<div align="center">
 
-**SOC and Red Team Lead** · Detection engineering · Incident response · Adversary simulation
+<img src="./hero.svg?v=4" alt="Animated cyber operations banner for Omar Mahmood, SOC and Red Team Lead" width="100%"/>
 
-Lahore, Pakistan
+<br/>
 
-<img src="./hero.svg?v=3" alt="Minimal OM monogram banner for Omar Mahmood, SOC and Red Team Lead" width="100%"/>
+<a href="https://github.com/oxploited19"><img src="https://img.shields.io/badge/GitHub-oxploited19-161b22?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub: oxploited19"/></a>
+<a href="https://www.linkedin.com/in/omar-mahmood12/"><img src="https://img.shields.io/badge/LinkedIn-Omar_Mahmood-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn: Omar Mahmood"/></a>
+<a href="https://tryhackme.com/p/Oxploited19"><img src="https://img.shields.io/badge/TryHackMe-Oxploited19-C11111?style=for-the-badge&amp;logo=tryhackme&amp;logoColor=white" alt="TryHackMe: Oxploited19"/></a>
+<a href="mailto:omarmahmood_kayi@outlook.com"><img src="https://img.shields.io/badge/Email-Contact-6D5DFB?style=for-the-badge&amp;logo=microsoftoutlook&amp;logoColor=white" alt="Email Omar Mahmood"/></a>
+<img src="https://komarev.com/ghpvc/?username=oxploited19&amp;color=43e7d2&amp;style=for-the-badge&amp;label=PROFILE+VIEWS" alt="GitHub profile views"/>
 
-## About
+<br/><br/>
 
-I lead SOC and red-team work across detection engineering, incident response, vulnerability management, and adversary simulation. My work spans SIEM, EDR/XDR, and SOAR workflows; VAPT and SOC automation; honeypots; and endpoint, network, server, and cloud hardening. I also mentor analysts through hands-on security labs.
+<img src="./about-life.svg?v=3" alt="Animated SOC and red team operations panels with a clearly labeled simulated hunt scenario" width="100%"/>
+
+<br/><br/>
+
+<img src="./stack.svg?v=3" alt="Animated orbiting security toolchain grouped by blue team, red team, purple team, and cloud" width="100%"/>
+
+<br/><br/>
+
+<img src="./id-dashboard.svg?v=3" alt="Animated cybersecurity profile dashboard for Omar Mahmood" width="100%"/>
+
+<br/><br/>
+
+<img src="./profile-3d-contrib/profile-night-view.svg" alt="Three-dimensional view of GitHub contribution activity" width="100%"/>
+
+</div>
+
+## Profile
+
+SOC and Red Team Lead based in Lahore, Pakistan. I work across detection engineering, incident response, vulnerability management, and adversary simulation, building practical workflows with SIEM, EDR/XDR, SOAR, and automation.
 
 ## Areas of impact
 
 - **SOC engineering:** Built workflows integrating SIEM, EDR/XDR, SOAR automation, and AI-assisted analysis.
-- **Vulnerability assessment:** Developed tooling for vulnerability analysis, attack correlation, analyst investigations, and customer reports.
+- **Vulnerability assessment:** Developed tooling for vulnerability analysis, attack correlation, investigations, and customer reporting.
 - **Red and purple team:** Conducted web security assessments and adversary simulations, then used findings to improve detection and response.
 - **Threat hunting:** Deployed honeypots and analyzed suspicious network activity in SOC and lab environments.
-- **Infrastructure security:** Supported mail security, risk assessments, server hardening, patching, and compliance work.
+- **Infrastructure security:** Supported mail security, risk assessments, server hardening, patching, and compliance.
+- **Analyst mentoring:** Teach practical log analysis, malware labs, incident response, and network defense.
 
 ## Experience
 
@@ -40,20 +63,11 @@ I lead SOC and red-team work across detection engineering, incident response, vu
 
 ## Certifications and training
 
-### Certifications
-
-Cyberwarfare Labs: CRTA · CRT-ID · CRT-COI · MCBTA  
-ISC2: Certified in Cybersecurity (CC)  
-Microsoft: SC-900 · AZ-900 · SC-200 · MS-900
-
-### Course certificates
-
-Google: Foundations of Cybersecurity · Play It Safe: Manage Security Risks · Connect and Protect: Networks and Network Security  
-CrowdSec: Community-Driven Cybersecurity
-
-### Additional training
-
-NAVTAC Cybersecurity and Digital Forensics · Cyberwing Cybersecurity and SOC Operations · CCNA training · CCNP training
+**Cyberwarfare Labs:** CRTA · CRT-ID · CRT-COI · MCBTA  
+**ISC2:** Certified in Cybersecurity (CC)  
+**Microsoft:** SC-900 · AZ-900 · SC-200 · MS-900  
+**Course certificates:** Google Foundations of Cybersecurity · Play It Safe: Manage Security Risks · Connect and Protect: Networks and Network Security · CrowdSec Community-Driven Cybersecurity  
+**Additional training:** NAVTAC Cybersecurity and Digital Forensics · Cyberwing Cybersecurity and SOC Operations · CCNA training · CCNP training
 
 [Credential records on LinkedIn](https://www.linkedin.com/in/omar-mahmood12/)
 
@@ -67,6 +81,12 @@ NAVTAC Cybersecurity and Digital Forensics · Cyberwing Cybersecurity and SOC Op
 - [GitHub repositories](https://github.com/oxploited19?tab=repositories)
 - [TryHackMe labs and write-ups](https://tryhackme.com/p/Oxploited19)
 
-## Contact
+<div align="center">
 
-[Email](mailto:omarmahmood_kayi@outlook.com) · [LinkedIn](https://www.linkedin.com/in/omar-mahmood12/)
+<br/>
+
+<img src="./connect.svg?v=3" alt="Animated contact card for email, LinkedIn, GitHub, and TryHackMe" width="100%"/>
+
+**Adversary minded. Defender focused.**
+
+</div>

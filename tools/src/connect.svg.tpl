@@ -31,7 +31,7 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
   <image x="40" y="38" width="327" height="420" preserveAspectRatio="xMidYMax meet" href="data:image/png;base64,__CHARACTER__"/>
 </g>
 <g class="fi" style="animation-delay:.3s">
-  <text class="jbb" x="34" y="452" font-size="10" fill="#8d93ab" letter-spacing="1.6">OPEN TO</text>
+  <text class="jbb" x="34" y="452" font-size="10" fill="#8d93ab" letter-spacing="1.6">CORE FOCUS</text>
   <circle class="dotp" cx="98" cy="448" r="3" fill="#34d399"/>
   <text class="jbb" x="110" y="452" font-size="10" fill="#34d399" letter-spacing="1.6">SOC &#183; RED TEAM &#183; VAPT</text>
 </g>
@@ -95,6 +95,6 @@ text{font-family:'JBM',ui-monospace,Menlo,Consolas,monospace}
     <text class="jbb" x="646.5" y="402" font-size="10" fill="#f97316" text-anchor="middle" letter-spacing="1.2">VAPT</text></g>
   <g><rect x="687" y="384" width="93" height="28" rx="14" fill="#7c3aed" fill-opacity=".1" stroke="#7c3aed" stroke-opacity=".35"/>
     <text class="jbb" x="733.5" y="402" font-size="10" fill="#7c3aed" text-anchor="middle" letter-spacing="1.2">PURPLE TEAM</text></g>
-  <text class="jbb" x="1240" y="403" font-size="9.5" fill="#8d93ab" text-anchor="end" letter-spacing="1.4">TYPICAL REPLY &lt; 24H</text>
+  <text class="jbb" x="1240" y="403" font-size="9.5" fill="#8d93ab" text-anchor="end" letter-spacing="1.4">CONTACT VIA EMAIL / LINKEDIN</text>
 </g>
 </svg>
